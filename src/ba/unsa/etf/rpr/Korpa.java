@@ -18,7 +18,7 @@ public class Korpa {
     }
 
     public boolean dodajArtikl(Artikl a){
-        if(brojArtikala = maxBrojArtikala) return false;
+        if(brojArtikala == maxBrojArtikala) return false;
         artikli[brojArtikala] = a;
         brojArtikala++;
         return true;
