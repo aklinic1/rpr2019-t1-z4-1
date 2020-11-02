@@ -20,6 +20,16 @@ public class Artikl {
         this.kod = kod;
     }
 
+    @Override
+    public boolean equals(Object o){
+        if(this == o) return true;
+        if(o == null || o.getClass() != this.getClass()) return false;
+        Artikl a = (Artikl) o;
+        return naziv.equals(((Artikl) o).getNaziv()) && cijena == ((Artikl) o).getCijena()
+                && kod.equals(((Artikl) o).getKod());
+    }
+
+
     public String getNaziv() {
         return naziv;
     }
