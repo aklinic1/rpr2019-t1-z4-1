@@ -37,12 +37,12 @@ public class Supermarket {
             Artikl a;
             int i;
             for (i = 0; i < brojArtikala; i++) {
-                if (artikli[i].getKod() == kod) {
+                if (artikli[i].getKod().equals(kod)) {
                     Artikl temp;
                     a = artikli[i];
                     temp = artikli[i];
                     artikli[i] = artikli[brojArtikala - 1];
-                    artikli[brojArtikala - 1] = temp;
+                    artikli[brojArtikala - 1] = null;
                     brojArtikala--;
                     return a;
                 }
