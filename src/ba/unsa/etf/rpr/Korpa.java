@@ -38,7 +38,7 @@ public class Korpa {
             Artikl a;
             int i;
             for (i = 0; i < brojArtikala; i++) {
-                if (artikli[i].getKod() == kod) {
+                if (artikli[i].getKod().equals(kod)) {
                     Artikl temp;
                     a = artikli[i];
                     temp = artikli[i];
