@@ -16,9 +16,11 @@ public class Supermarket {
         brojArtikala=0;
     }
 
-    public void dodajArtikl(Artikl artikl){
+    public boolean dodajArtikl(Artikl artikl){
+        if(brojArtikala == maxBrojArtkala) return false;
         artikli[brojArtikala] = artikl;
         brojArtikala++;
+        return true;
     }
 
     public Artikl[] getArtikli() {

@@ -31,6 +31,7 @@ public class Korpa {
     public int getBrojArtikala() {
         return brojArtikala;
     }
+
     public Artikl izbaciArtiklSaKodom(String kod) {
         if (brojArtikala == 0) return null;
         else {
